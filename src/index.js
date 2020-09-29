@@ -37,9 +37,11 @@ function lookLocalStorage() {
   if (localStorageTheme === Theme.DARK) {
     document.body.classList.toggle(Theme.DARK);
     localStorage.clear();
+    inputRef.checked = true;
   } else {
     document.body.classList.toggle(Theme.LIGHT);
     localStorage.clear();
+    inputRef.checked = false;
   }
 }
 
